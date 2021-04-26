@@ -23,7 +23,7 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
 			
 			<!-- Para fins de estudo é interessante exibir o SQL gerado pelo hibernate no console com os comandos abaixo -->
 			<property name="hibernate.show_sql" value="true"/>
-			<property name="hibernete.format_sql" value="true"/>
+			<property name="hibernate.format_sql" value="true"/>
 		</properties>
 	</persistence-unit>
 </persistence>
