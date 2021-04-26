@@ -45,6 +45,15 @@ public class App {
 		
 		entityManager.getTransaction().commit();
 		
+		
+		// Removendo um registro
+		// A gente só consegue remover objetos que o entityManager sabe que existem(já está na mem[oria dele, sob seu gerenciamento)
+		cliente = entityManager.find(Cliente.class, 2); // automaticamente o entityManager coloca o objeto buscado como gerenciado
+		
+		entityManager.getTransaction().begin();
+		entityManager.remove(cliente);
+		entityManager.getTransaction().commit();
+		
 		// Fechando entityManager e entityManagerFactory.
 		entityManager.close();
 		entityManagerFactory.close();
