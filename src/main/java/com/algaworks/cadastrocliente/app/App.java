@@ -37,8 +37,7 @@ public class App {
 		
 		// Inserindo registro
 		cliente = new Cliente();
-		cliente.setId(2); // inserção manual de id. Mas lembre que a tabela é autoincrementável nesse campo.
-		cliente.setNome("Autopeças Estrada");
+		cliente.setNome("Eletro Silva");
 		
 		entityManager.getTransaction().begin();
 		
